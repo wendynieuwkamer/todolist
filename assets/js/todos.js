@@ -21,7 +21,12 @@ $("input[type='text']").keypress(function(event){
 })
 
 function createTodoHTML (text) {
-	var base = "<li><span>X</span> " ;
+	var base = "<li><span><i class='fa fa-trash-o' aria-hidden='true'></i></span> " ;
 	var end = "</li>" ;
 	return base + text + end
 }
+
+// Hide add form by clicking plus button
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
+})
