@@ -4,7 +4,7 @@ main {
 	margin: 0 auto;
 }
 
-.done {
+.completed {
 	color: grey;
 	text-decoration: line-through;
 }
